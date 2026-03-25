@@ -1,0 +1,6 @@
+C
+Ge
+Gnd
+L
+R
+V

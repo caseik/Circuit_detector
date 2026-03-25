@@ -1,0 +1,14 @@
+---
+marp: true
+---
+# Circuit detector
+
+Variables:
+- `DATA_DIR`
+- `START_IMAGE`, `END_IMAGE`
+- `RESIZE_WIDTH`, `RESIZE_HEIGHT`
+- `BINARY_THRESHOLD`
+- `CLOSE_KERNEL`, `DILATE_KERNEL`
+- `MIN_AREA`, `BOX_MARGIN`
+- `MERGE_IOU`
+

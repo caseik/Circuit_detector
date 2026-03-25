@@ -1,0 +1,10 @@
+build/
+cmake-build-*/
+.git/
+circuit_detector_env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.swp
+.DS_Store
