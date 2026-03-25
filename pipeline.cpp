@@ -34,11 +34,17 @@ void processImage(int imageId, const CliConfig& config)
 
     cv::Mat binary = toBinary(img, config.binaryThreshold);
     cv::resize(binary, binary, cv::Size(config.resizeWidth, config.resizeHeight), cv::INTER_LANCZOS4);
+    output(binary);
 
     cv::Mat clean = keepLargestComponent(binary);
+    output(clean);
+
     cv::Mat skeleton = skeletonize(clean);
+    output(skeleton);
     cv::Mat features = detectNonLinear(skeleton);
+    output(features);
     cv::Mat grown = growRegions(features, config.closeKernel, config.dilateKernel);
+    output(grown);
 
     std::vector<cv::Rect> boxes = extractRegions(
         grown,

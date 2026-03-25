@@ -38,3 +38,6 @@ build/CMakeFiles/circuit_detector.dir/symbol_classifier.cpp.o.d
 build/CMakeCache.txt
 build/cmake_install.cmake
 build/circuit_detector
+CircuitVision/models
+CircuitVision/circuit_vision
+models/YOLO/best_large_model_yolo.pt

@@ -1,4 +1,5 @@
 numpy
 scikit-learn
-opencv-python-headless
+opencv-python
 onnx
+ultralytics
